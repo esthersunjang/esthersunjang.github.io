@@ -20,7 +20,7 @@
 			font-family: 'Lato', sans-serif;
 			font-size: 19.5px;
 			text-align: center;
-			padding: 0px 0px 10px 0px;
+			padding: 0px 0px 0px 0px;
 			margin: -10px 0px 20px 0px;
 		}
 		h2 a:link, a:visited	{
@@ -44,7 +44,7 @@
 		}
 		#coming-soon img  {
 		  display: inline-block;
-		  padding-top: 20px;
+		  padding-top: 0px;
 		  width: 50%;
 		  height: auto;
 		}
@@ -60,7 +60,20 @@
 		.beta-signup-form p a:hover 	{
   		color: #007DC5;
   		border-bottom-color: #999999;
-  	}	    
+  	}	 
+  	.twitterfollow a:link	{
+			text-decoration: none;
+			color: black;
+		}
+		.twitterfollow p a 	{
+  		color: black;
+  		border-bottom-color: transparent;
+  		border-bottom-style: solid;
+		}
+		.twitterfollow p a:hover 	{
+  		color: black;
+  		border-bottom-color: #999999;
+  	}	   
 		</style>		
 </head>
 
@@ -73,16 +86,21 @@
 		  We're still working, but we'll be launching soon!
 		  </p>
 		</div>	
-		<div class="beta-signup-form">
-		  <p id="beta-signup-form">
-		  Want to be alerted when our private beta site is launched? Sign up <a href="betasignup.html">here.</a>
-		  </p>
-		</div>
 		<div class="coming-soon">  
 	    <p id="coming-soon">
 		  <img src="coming-soon.JPG">
 		  </p>
 		</div>  
+		<div class="beta-signup-form">
+		  <p id="beta-signup-form">
+		  Want to be alerted when our private beta site is launched? Sign up <a href="betasignup.html">here.</a>
+		  </p>
+		</div>
+		<div class="twitterfollow">
+		  <p id="twitterfollow">
+		  Follow us @<a href="https://twitter.com/mydailyartcandy">mydailyartcandy</a>
+		  </p>
+		</div>
 	</div>
 </body>		
 </html>
