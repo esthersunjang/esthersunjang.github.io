@@ -38,15 +38,15 @@
 		}			
 		.todaypic	{
 			text-align: center;
-		}											
+		}										
 		#todaypic 	{
 			display: inline-block;
     	margin-left: auto;
     	margin-right: auto;
     	margin-top: auto;
     	margin-bottom: auto;
-    	height: 200%;
-    	width: 200%; 
+    	height: 50%;
+    	width: 50%; 
     }
     .arrow	{
     	text-align: center;
@@ -57,6 +57,27 @@
     	display: inline-block;
     	margin-bottom: 0px;
     }	
+    /*.social {
+    	text-align: center;
+    }
+    #facebook	{
+    	display: inline-block;
+    }*/
+    .bid	{
+    	text-align: center;
+    	font-family: 'Lato', sans-serif;
+    	font-size: 16px;
+    }
+    .bid p	{
+    	display: inline-block;
+    }		
+    .bid #questionmark	{
+    	height: 8%;
+    	width: 8%;
+    }
+    .bid #questionmark a:link	{
+    	text-decoration: none;
+    }		
     .topNav	{
     	text-align: center;
     }	
@@ -93,27 +114,36 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<h1><a href="index.html">D&#8901A&#8901T</a></h1>
 	<h2><a href="index.html">DAILY ART TASTING</a></h2>
+	<h2><a href="archives.html">The Archives | November 22, 2013</a></h2>
 	<div id="main-container">
 		<div class="todaypic">
 			<!--Today's picture-->
-			<a href="index.html"><img id="todaypic" src="largerimage_20131121.jpg"></a>
+			<a title="Click to Enlarge, Rembrandt [Public domain], via Wikimedia Commons" href="largerimage-20131122.html"><img width="512" alt="Rembrandt Harmenszoon van Rijn - An Elephant, 1637 - Google Art Project" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Rembrandt_Harmenszoon_van_Rijn_-_An_Elephant%2C_1637_-_Google_Art_Project.jpg/512px-Rembrandt_Harmenszoon_van_Rijn_-_An_Elephant%2C_1637_-_Google_Art_Project.jpg"/></a>
 		</div>
 		<div class="arrow">
 			<a href="artdescription-20131122.html"> <img id="arrow" src="arrow-right.png"> </a>
 		</div>
+		</div>
 	</div>	
-			
 		<div class="page-divider"></div>
-		
 		<div class="topNav">
 			<ul>
 				<li> <a href="archives.html"> Archives </a> </li>
 				<li> <a href="about.html"> About </a> </li>
 				<li> <a href="contact.html"> Contact </li>				
 			</ul>				
-		</div>
+		</div>	
 	</div>
 </body>
 </html>

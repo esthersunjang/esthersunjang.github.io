@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<title> Daily Art Tasting </title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<title> Description | Daily Art Tasting </title>
 	<style> 
 		h1	{
 			font-family: 'Abril Fatface', cursive;
@@ -32,25 +32,22 @@
 		}
 		#main-container	{
 			background-color: #FEFEFA;
-			position: relative;
+			position: absolute;
 			left: 0;
 			right: 0;
-		}			
-		.todaypic	{
+		}	
+		.artdescription	{
 			text-align: center;
-		}											
-		#todaypic 	{
+		}			
+		.artdescription p	{
+			font-family: 'Lato', sans-serif;
 			display: inline-block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: auto;
-    	margin-bottom: auto;
-    	height: 200%;
-    	width: 200%; 
-    }
-    .arrow	{
-    	text-align: center;
-    }	
+			width: 600px;
+			line-height: 25px;
+		}
+		.arrow	{
+			text-align: center;
+		}		
     #arrow	{
     	height: 10%;
     	width: 10%;
@@ -95,15 +92,23 @@
 <body>
 	<h1><a href="index.html">D&#8901A&#8901T</a></h1>
 	<h2><a href="index.html">DAILY ART TASTING</a></h2>
+	<h2><a href="archives.html">The Archives | November 22, 2013</a></h2>
 	<div id="main-container">
-		<div class="todaypic">
+		<div class="artdescription">
 			<!--Today's picture-->
-			<a href="index.html"><img id="todaypic" src="largerimage_20131121.jpg"></a>
+			<p id="artdescription"> <em>Elephant</em>, by Rembrandt van Rijn. 
+			<br>1637. 
+			<br>Black chalk on paper. 
+			<br>Current Location: Albertina, Vienna.
+			<br><br> In 1637, Rembrandt drew several portraits of Hansken, the performing elephant. Hansken,
+			in addition to being a famous performing elephant at the time, has since become known for being the first to define her species,
+			Elephas maximus (Asian elephant). I like this portrait because it is quite different from the works for which Rembrandt is known. (The Nightwatch, Abduction of Europa, etc.) 
+			<br> I also just love elephants.
+			 </p>
 		</div>
-		<div class="arrow">
-			<a href="artdescription-20131122.html"> <img id="arrow" src="arrow-right.png"> </a>
+		<div class="arrow">	 
+			<a href="artistdescription-20131122.html"><img id="arrow" src="arrow-right.png"></a>
 		</div>
-	</div>	
 			
 		<div class="page-divider"></div>
 		
