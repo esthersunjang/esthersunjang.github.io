@@ -1,141 +1,117 @@
 <!DOCTYPE html>
-<html>
-<head> 
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<title> Archives | Daily Art Tasting </title>
-	<style> 
-				h1	{
-			font-family: 'Abril Fatface', cursive;
-			font-size: 60px;
-			text-align:center;
-			padding: 0px 0px 0px 0px;
-			margin: 0px 0px 0px 0px;
-		}
-		h1 a:link, a:visited	{
-			text-decoration: none;
-			color: black;
-		}
-		h2	{
-			font-family: 'Lato', sans-serif;
-			font-size: 18px;
-			text-align: center;
-			padding: 0px 0px 10px 0px;
-			margin: -10px 0px 20px 0px;
-		}
-		h2 a:link, a:visited	{
-			text-decoration: none;
-			color: black;
-		}
-		body	{
-			background-color: #FEFEFA
-		}
-		#main-container	{
-			background-color: #FEFEFA;
-			position: relative;
-			left: 0;
-			right: 0;
-		}			
-		.todaypic	{
-			text-align: center;
-			font-family: 'Lato', sans-serif;
-		}									
-		#todaypic 	{
-			display: inline-block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: auto;
-    	margin-bottom: auto;
-    	height: 50%;
-    	width: 50%; 
-    }
-    .arrow	{
-    	text-align: center;
-    }	
-    #arrow	{
-    	height: 10%;
-    	width: 10%;
-    	display: inline-block;
-    	margin-bottom: 0px;
-    }	
-    /*.social {
-    	text-align: center;
-    }
-    #facebook	{
-    	display: inline-block;
-    }*/
-    .bid	{
-    	text-align: center;
-    	font-family: 'Lato', sans-serif;
-    	font-size: 16px;
-    }
-    .bid p	{
-    	display: inline-block;
-    }		
-    .bid #questionmark	{
-    	height: 8%;
-    	width: 8%;
-    }
-    .bid #questionmark a:link	{
-    	text-decoration: none;
-    }		
-    .topNav	{
-    	text-align: center;
-    }	
-		.topNav li	{
-			display: inline-block;
-			font-family: 'Lato', sans-serif;
-			color: #999999;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: auto;
-    	margin-bottom: auto;
-    	padding: 0px 50px 0px 10px;
-		}
-		.topNav ul > li > a 	{
-  		border-bottom-color: transparent;
-  		border-bottom-style: solid;
-		}															
-		.topNav a 	{
-  		color: #999999;
-		}
-		.topNav a:hover 	{
-  		color: #999999;
-  		border-bottom-color: #999999;
-		}
-		.topNav a:link	{
-			text-decoration: none;
-		}
-		.page-divider {
-			position: relative;
-			margin-top: 50px;
-  		border-bottom: 1px solid #999999;
-		}						
-		</style>		
+<!--[if IE 7 | IE 8]>
+<html class="ie" lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<!--<![endif]-->
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title> Archives | Daily Art Tasting </title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 9]>
+<script src="http://www.tylerfinck.com/wp-content/themes/tylerfinckdotcom/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<link rel='stylesheet' id='archives-css'  href='archives-css.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.tylerfinck.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://www.tylerfinck.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+
+.fve-video-wrapper {
+
+	position: relative;
+
+	overflow: hidden;
+
+	height: 0;
+
+	padding-bottom: 56.25%; /* This is default, but will be overriden */
+
+	margin: 0.5em 0; /* A bit of margin at the bottom */
+
+}
+
+
+
+.fve-video-wrapper iframe,  
+
+.fve-video-wrapper object,  
+
+.fve-video-wrapper embed {
+
+	position: absolute;
+
+	display: block;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+}</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+<script>		
+$(window).scroll(function(){
+   if  ($(window).scrollTop() >= 397){
+        $('#excerpt').css({position:'fixed',top:165});
+   } else {
+         $('#excerpt').css({position: 'relative', top:0});
+        }
+});
+</script>
 </head>
 
-<body>
+<body class="home page page-id-553 page-parent page-template page-template-page-workall-php single-author">
 	<h1><a href="index.html">D&#8901A&#8901T</a></h1>
-	<h2><a href="index.html">DAILY ART TASTING</a></h2>
-	<div id="main-container">
-		<div class="todaypic">
-			<!--Today's picture-->
-			November 22, 2013
-			<br><br><a title="Rembrandt [Public domain], via Wikimedia Commons"><img width="512" alt="Rembrandt Harmenszoon van Rijn - An Elephant, 1637 - Google Art Project" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Rembrandt_Harmenszoon_van_Rijn_-_An_Elephant%2C_1637_-_Google_Art_Project.jpg/512px-Rembrandt_Harmenszoon_van_Rijn_-_An_Elephant%2C_1637_-_Google_Art_Project.jpg"/></a>
-		</div>
-		<!--<div class="social">
-			<a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="share-facebook.png"></a>
-		</div>-->	
-		</div>
-	</div>	
-		<div class="page-divider"></div>
-		<div class="topNav">
-			<ul>
-				<li> <a href="archives_20131121.html"> Archives </a> </li>
-				<li> <a href="about.html"> About </a> </li>
-				<li> <a href="contact.html"> Contact </li>				
-			</ul>				
-		</div>	
-	</div>
+	<h2><a href="index.html">DAILY ART TASTING</h2>
+	<h2><a href="archives.html">The Archives</h2>
+
+
+<!--	<small>If you came for my horizontal scrolling website <a href="https://github.com/sursly/Horizontal-Scroller">it is on Github</a>.</small>-->
+</div>
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+			<!--			<div id="homebanner">
+				<p>Temp</p>
+			</div>
+			-->
+
+			<div class="colorgrid">
+			<ul class="subpages">
+			<span style="display:none;">553</span>
+									
+			<li><a href="archive_20131122"><h2>Elephant, Rembrandt. <br><br>Nov. 22, 2013</h2><h3><ul class='post-meta'>
+<li><span class='post-meta-key'>caption:</span> <br></li>
+</ul>
+</h3><span class="red">view</span>
+			 <img width="200" height="200" src="archive-elephant.jpg" data-lazy-src="archive-elephant.jpg" class="attachment-thumbnail wp-post-image" alt="archive-elephant.jpg" /><noscript><img width="400" height="400" src="archive-elephant.jpg" class="attachment-thumbnail wp-post-image" alt="archive-elephant.jpg" /></noscript></a></li>
+			
+						</ul>
+			</div>					
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+<script language="javascript" type="text/javascript">var kpg_cell="N";var kpg_nrci_image="http://www.tylerfinck.com/wp-content/plugins/no-right-click-images-plugin/not.gif";var kpg_nrci_extra="N";var kpg_nrci_drag="Y";</script>
+<script language="javascript" type="text/javascript" src="http://www.tylerfinck.com/wp-content/plugins/no-right-click-images-plugin/no-right-click-images.js"></script>
+<script type='text/javascript' src='http://www.tylerfinck.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.5'></script>
+<script type='text/javascript' src='http://www.tylerfinck.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.5'></script>
+<script type='text/javascript' src='http://www.tylerfinck.com/wp-content/themes/tylerfinckdotcom/js/navigation.js?ver=1.0'></script>
+
 </body>
 </html>
