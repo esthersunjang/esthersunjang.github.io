@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<title> Artist | Daily Art Tasting </title>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<title> Daily Art Tasting </title>
 	<style> 
 		h1	{
 			font-family: 'Abril Fatface', cursive;
@@ -32,28 +32,52 @@
 		}
 		#main-container	{
 			background-color: #FEFEFA;
-			position: absolute;
+			position: relative;
 			left: 0;
 			right: 0;
-		}	
-		.artdescription	{
-			text-align: center;
 		}			
-		.artdescription p	{
-			font-family: 'Lato', sans-serif;
-			display: inline-block;
-			width: 500px;
-			line-height: 25px;
-		}
-		.arrow	{
+		.todaypic	{
 			text-align: center;
-		}		
+		}										
+		#todaypic 	{
+			display: inline-block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: auto;
+    	margin-bottom: auto;
+    	height: 50%;
+    	width: 50%; 
+    }
+    .arrow	{
+    	text-align: center;
+    }	
     #arrow	{
     	height: 10%;
     	width: 10%;
     	display: inline-block;
     	margin-bottom: 0px;
     }	
+    /*.social {
+    	text-align: center;
+    }
+    #facebook	{
+    	display: inline-block;
+    }*/
+    .bid	{
+    	text-align: center;
+    	font-family: 'Lato', sans-serif;
+    	font-size: 16px;
+    }
+    .bid p	{
+    	display: inline-block;
+    }		
+    .bid #questionmark	{
+    	height: 8%;
+    	width: 8%;
+    }
+    .bid #questionmark a:link	{
+    	text-decoration: none;
+    }		
     .topNav	{
     	text-align: center;
     }	
@@ -90,34 +114,36 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<h1><a href="index.html">D&#8901A&#8901T</a></h1>
 	<h2><a href="index.html">DAILY ART TASTING</a></h2>
+	<h2><a href="archives.html">The Archives | November 25, 2013</a></h2>
 	<div id="main-container">
-		<div class="artdescription">
+		<div class="todaypic">
 			<!--Today's picture-->
-			<p id="artdescription"> 
-			<em>Interesting things about Rivane Neuenschwander:</em>
-			<br>Rivane Neuenschwander (b. 1967) is from Bel Horizonte, Brazil. Her art is often labeled "ethereal materialism," whose effects are
-			achieved by using simple, everyday materials to create what the Guggenheim calls "mesmerizing visions." Neuenschwander's art conveys the sense
-			that art is participatory and that the viewer is equally as involved as the artist. This concept is one that is familiar to Brazilian artists as it was
-			established by modern Brazilian artists like Lygia Clark and H&eacute;lio Oiticica. 
-			<br><br> Rivane Neuenschwander may have been born an artist, but it took her a while to find her calling. She initially tried to learn the guitar and flute, then
-			tried to out anthropology, sociology and economics. I'm glad that she found art because I very much enjoy her playful pieces.
-			 </p>
+        <a href="http://mediaspace.newmuseum.org/rivanepressrelease/" target="_blank"><img alt="I Wish Your Wish" src="iwishyourwish.jpg"/></a>
 		</div>
-		<div class="arrow">	 
-			<a href="index.html"><img id="arrow" src="arrow-right.png"></a>
+		<div class="arrow">
+			<a href="artdescription-20131125.html"> <img id="arrow" src="arrow-right.png"> </a>
 		</div>
-			
+		</div>
+	</div>	
 		<div class="page-divider"></div>
-		
 		<div class="topNav">
 			<ul>
 				<li> <a href="archives.html"> Archives </a> </li>
 				<li> <a href="about.html"> About </a> </li>
 				<li> <a href="contact.html"> Contact </li>				
 			</ul>				
-		</div>
+		</div>	
 	</div>
 </body>
 </html>
