@@ -45,6 +45,16 @@
 			width: 600px;
 			line-height: 25px;
 		}
+		
+		#fb-comments	{
+		  margin-top: 40px;
+		  text-align: center;
+		  position: relative;
+		}	
+		.fb-comments {
+		  display: inline-block;
+		}  
+		
 		.arrow	{
 			text-align: center;
 		}		
@@ -99,6 +109,15 @@
 
   </script>
   
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
 </head>
 
 <body>
@@ -115,6 +134,11 @@
 			happy when I'm on the beach. I asked my boyfriend what he sees, and he said, "A banana, and apples, and pears." He must be
 			happiest when eating. Sounds about right.
 		</div>
+		
+		<div id="fb-comments">
+		<div class="fb-comments" data-href="http://dailyarttasting.com/comments" data-numposts="5" data-colorscheme="light"></div>
+		</div>
+		
 		<div class="arrow">	 
 			<a href="artistdescription.html"><img id="arrow" src="arrow-right.png"></a>
 		</div>
