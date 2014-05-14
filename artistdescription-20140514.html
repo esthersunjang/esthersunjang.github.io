@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-	<title> Daily Art Tasting </title>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<title> Artist | Daily Art Tasting </title>
 	<style> 
 		h1	{
 			font-family: 'Abril Fatface', cursive;
@@ -20,7 +20,7 @@
 			font-family: 'Lato', sans-serif;
 			font-size: 18px;
 			text-align: center;
-			padding: 0px 0px 20px 0px;
+			padding: 0px 0px 10px 0px;
 			margin: -10px 0px 20px 0px;
 		}
 		h2 a:link, a:visited	{
@@ -32,56 +32,28 @@
 		}
 		#main-container	{
 			background-color: #FEFEFA;
-			position: relative;
+			position: absolute;
 			left: 0;
 			right: 0;
-		}			
-		.todaypic	{
+		}	
+		.artdescription	{
 			text-align: center;
+		}			
+		.artdescription p	{
 			font-family: 'Lato', sans-serif;
-		}										
-		#todaypic 	{
 			display: inline-block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: auto;
-    	margin-bottom: auto;
-    	height: 50%;
-    	width: 50%; 
-    }
-    .arrow	{
-    	text-align: center;
-    }	
+			width: 500px;
+			line-height: 25px;
+		}
+		.arrow	{
+			text-align: center;
+		}		
     #arrow	{
     	height: 10%;
     	width: 10%;
     	display: inline-block;
-    	margin-top: 20px;
     	margin-bottom: 0px;
     }	
-    #fb-comments	{
-		  margin-top: 60px;
-		  text-align: center;
-		  position: relative;
-		}	
-		.fb-comments {
-		  display: inline-block;
-		}  
-    .bid	{
-    	text-align: center;
-    	font-family: 'Lato', sans-serif;
-    	font-size: 16px;
-    }
-    .bid p	{
-    	display: inline-block;
-    }		
-    .bid #questionmark	{
-    	height: 8%;
-    	width: 8%;
-    }
-    .bid #questionmark a:link	{
-    	text-decoration: none;
-    }		
     .topNav	{
     	text-align: center;
     }	
@@ -114,37 +86,49 @@
 			margin-top: 50px;
   		border-bottom: 1px solid #999999;
 		}						
-		</style>
+		</style>	
 		
-  
-		
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44794777-1', 'dailyarttasting.com');
+  ga('send', 'pageview');
+
+  </script>
+			
 </head>
 
 <body>
-
-	<h1><a href="index.html">D&#8901A&#8901T</a></h1>
+		<h1><a href="index.html">D&#8901A&#8901T</a></h1>
 	<h2><a href="index.html">DAILY ART TASTING</a></h2>
+	<h2><a href="archives.html">The Archives</a></h2>
 	<div id="main-container">
-		<div class="todaypic">
+		<div class="artdescription">
 			<!--Today's picture-->
-    <img width="1000" lt="Annunciation" src="Leonardo_da_Vinci_Annunciation.jpg"></a>
+			<p id="artdescription"> 
+			<em>Interesting things about Leonardo da Vinci:</em>
+			<br> Leonardo da Vinci was <em>the</em> Renaissance Man. He was an accomplished musician, draftsman, scientist, and artist.
+			<br><br> Leonardo was the first man to explain why the sky is blue (the way the air scatters light). He was an expert on hydraulics and the movement of water. He was also an expert in human anatomy.
+			<br><br> Leonardo was an ambidextrous, paranoid dyslexic, which allowed him to write forward with one hand while writing backward with another.
+			 </p>
 		</div>
-		<div class="arrow">
-			<a href="artdescription.html"> <img id="arrow" src="arrow-right.png"> </a>
+		
+		<div class="arrow">	 
+			<a href="index.html"><img id="arrow" src="arrow-right.png"></a>
 		</div>
-		<div id="fb-comments">
-		<div class="fb-comments" data-href="http://dailyarttasting.com/comments" data-numposts="5" data-colorscheme="light"></div>
-		</div>
-		</div>
-	</div>	
+			
 		<div class="page-divider"></div>
+		
 		<div class="topNav">
 			<ul>
 				<li> <a href="archives.html"> Archives </a> </li>
 				<li> <a href="about.html"> About </a> </li>
 				<li> <a href="contact.html"> Contact </li>				
 			</ul>				
-		</div>	
+		</div>
 	</div>
 </body>
 </html>
